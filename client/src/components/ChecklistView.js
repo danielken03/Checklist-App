@@ -188,7 +188,6 @@ function ChecklistView({ checklist, tasks, onBack, onUpdate }) {
     // We'll handle all footers in didDrawPage below
 
     // ── CHECKLIST TABLE ──────────────────────────────────────
-    let pageCount = 1;
     // Every task is a regular row with an Initial cell
     const completionStatus = localTasks.map(task =>
       task.subtasks && task.subtasks.length > 0
@@ -234,7 +233,6 @@ function ChecklistView({ checklist, tasks, onBack, onUpdate }) {
         }
       },
       didDrawPage: (data) => {
-        pageCount = data.pageNumber;
         // Draw header on pages 2+ (page 1 header already drawn)
         if (data.pageNumber > 1) {
           drawPageHeader();
