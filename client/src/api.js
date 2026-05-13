@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = '/api';
+const API_URL = 'https://checklist-api-rfci.onrender.com/api';
 
 class ApiService {
   constructor() {
