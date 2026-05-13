@@ -57,8 +57,6 @@ function App() {
   const isGrandAdmin = user.role === 'grand_admin';
   const isFrontOfficeAdmin = user.role === 'front_office_admin';
   const isSalesAdmin = user.role === 'sales_admin';
-  const isManager = user.role === 'manager';
-  const isAnyAdmin = isGrandAdmin || isFrontOfficeAdmin || isSalesAdmin;
   
   const canSeeCalendar = true; // Everyone can see calendar!
   const canSeeTemplates = isGrandAdmin || isFrontOfficeAdmin || isSalesAdmin;
