@@ -15,6 +15,7 @@ function Tasks({ selectedDate, onDateChange }) {
   const scrollPositionRef = useRef(0);
   const shouldRestoreScrollRef = useRef(false);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     loadTasks();
   }, [selectedDate]);

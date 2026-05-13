@@ -59,6 +59,7 @@ function MODReport({ selectedDate, onClose }) {
     maintenanceReport: ''
   });
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     loadFormData();
   }, [selectedDate]);

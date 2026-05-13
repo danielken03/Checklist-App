@@ -58,6 +58,7 @@ function GroupResumeView({ resumeId, onClose, onEdit, canEdit }) {
   const [resume, setResume] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => { loadResume(); }, [resumeId]);
 
   const loadResume = async () => {

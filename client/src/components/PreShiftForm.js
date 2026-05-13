@@ -40,6 +40,7 @@ function PreShiftForm({ selectedDate, onClose }) {
     ambassadorArrivals: ''
   });
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     loadFormData();
   }, [selectedDate]);

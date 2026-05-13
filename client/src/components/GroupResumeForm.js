@@ -107,7 +107,8 @@ function GroupResumeForm({ selectedDate, resumeId, onClose }) {
     audioVisual: '', shippingReceiving: '', accounting: '',
     guestList: [{ title: '', firstName: '', lastName: '', email: '', arrivalDate: '', departureDate: '', confirmationNumber: '' }]
   });
-
+  
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => { if (resumeId) loadResume(); }, [resumeId]);
 
   const loadResume = async () => {

@@ -12,10 +12,11 @@ function GroupResumeList({ selectedDate, onClose, userRole }) {
 
   const canEdit = ['grand_admin', 'sales_admin', 'sales_employee'].includes(userRole);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     loadResumes();
-  }, [selectedDate]);
-
+  }, []);
+  
   const loadResumes = async () => {
     try {
       setLoading(true);

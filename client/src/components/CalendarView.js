@@ -68,6 +68,7 @@ function CalendarView({ onDateSelect, userRole }) {
 
   const canCreatePacket = ['grand_admin', 'sales_admin', 'sales_employee'].includes(userRole);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => { loadCalendarData(); }, [currentDate, viewMode]);
 
   const loadCalendarData = async () => {
